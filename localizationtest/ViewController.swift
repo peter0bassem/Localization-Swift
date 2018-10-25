@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor.yellow
         navigationItem.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: "navigation_title", comment: "")
         headerLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "header", comment: "")
         languageLabel.text = LocalizationSystem.sharedInstance.getLanguage()
